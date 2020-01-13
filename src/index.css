@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,71 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Header>h2 {
+  color: white;
+}
+
+.ContentWrapper {
+  padding: 50px 100px;
+  height: calc(100vh - 128px);
+}
+
+.PaginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PostContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.PostList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PostItem {
+  margin: 20px;
+  width: 600px;
+}
+
+.CommentIcon {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.PageHeader {
+  border: 1px solid rgb(235, 237, 240);
+  background: white;
+}
+
+.CommentList {
+  max-height: 70vh;
+  overflow-y: auto;
+
+}
+
+.CommentList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.CommentList::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+.CommentList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #001529;
 }
